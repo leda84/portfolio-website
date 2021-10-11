@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(50, 112, 31);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(218, 248, 217);
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: rgb(176, 211, 195);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #dbfae4;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(130, 160, 134);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  img {
+  border-radius: 50%;
+}
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Laura DeJesus</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="interests.html">Interests/Hobbies</a></li>
+      <li><a href="learn-more.html">Want to Learn More?</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>About Me</h2>
+    <p>Hey there! </p>
+    <p>I am excited to start my journey as a web developer. I have spent the last 10 years mostly in the
+        food industry. I made the decision to switch careers to provide myself with more 
+        opportunies along with better job security.
+    </p>
+    <p>I am the middle child of 5 siblings. I have an amazing husband and a crazy little dog. My husband and I were both born and raised in Chicago. Although we frequently talk about moving to another city, it is very unlikely. 
+        There is honestly so much we love to do in Chicago, from <a href="https://architecturetourchicago.com/">architecture tours</a> to endless <a href="https://www.chicagofoodplanet.com/">food options</a>. Chicago never seizes to amaze us and definitely entices us to continue to call it home.
+    </p>
+    <a id='LGnl0tklTJBo7oJtx2NiJA' class='gie-single' href='http://www.gettyimages.com/detail/1204331594' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'LGnl0tklTJBo7oJtx2NiJA',sig:'Jk-_C3XQXO__rZ62TPzk9vPRRm7nKeDD-VIx410Y_38=',w:'509px',h:'339px',items:'1204331594',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+    <h2>Interests & Hobbies</h2>
+    <p><ul>
+        <li>Baking</li>
+        <li>Bikeriding</li>
+        <li>Puzzles</li>
+        <li>Photography</li>
+        <ul>
+            <li>Landscape</li>
+            <li>Macro</li>
+            <li>Architectural</li>
+            <li>Wedding</li>
+        </ul>
+        <li>Dance</li>
+        <li>Yoga</li>
+    </ul></p>
+
+    <h2>Want to Learn More?</h2>
+    <a id='rxoLMRagQJRiq9GQA0r20A' class='gie-single' href='http://www.gettyimages.com/detail/1280440759' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'rxoLMRagQJRiq9GQA0r20A',sig:'Is-XsB9XhAKdGF5VpjQs-Ey-eec8I7V_IQ4Ap85lvWM=',w:'617px',h:'279px',items:'1280440759',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+    <form action="/action_page.php">
+        <label for="question">Ask me a question:</label><br>
+        <input type="text" id="question" placeholder="My question is..."><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+  </article>
+</section>
+
+<footer>
+  <p>Thanks for visiting!</p>
+</footer>
+
+</body>
+</html>
+
